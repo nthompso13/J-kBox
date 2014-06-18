@@ -1,0 +1,19 @@
+Enclosed is a website for collaborative youtube playlists. The website is called Juk Box. This website utilizes socketIO websockets from the flask framework to sync music, chat, and other features. 
+
+All requirements can be installed directly through Pip. Lucky you.
+
+You can also visit the site at http://vibevote.com to see it in action. 
+
+Requirements To Run:
+
+Flask==0.10.1
+Flask-SocketIO
+Jinja2==2.7.2
+MarkupSafe==0.18
+Werkzeug==0.9.4
+gevent==1.0
+gevent-socketio==0.3.6
+gevent-websocket==0.9.2
+greenlet==0.4.2
+itsdangerous==0.23
+ujson==1.33

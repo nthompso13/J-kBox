@@ -1,0 +1,81 @@
+<html>
+
+<head>
+	<!-- For the Tab Labelling -->
+	<title> JüK Box </title>
+	<link rel="shortcut icon" href="static/icon.ico">
+	<!-- Youtube API Link -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,100' 		rel='stylesheet' type='text/css'>
+	<!-- JQuery Link and WebSocket Links-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript"  src="http:////cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
+	<!-- Link to the javascript that I wrote, as well as standard stylesheet -->
+	<link type="text/css" href="static/index.css" rel="stylesheet"/ charset="utf-8">
+	<script src="static/index.js"></script>
+</head>
+
+
+
+<body>
+	<!-- Jük Box Logo -->
+	<div class="centeredTop">
+		<img id="logo" src="static/Logo.png"/><br>
+	</div>
+		<div class="fadeWrapper">
+
+	<!-- This is  where the center logo and overlay of youtube go -->
+	<div class="centeredMiddle" >
+    	<div id="player"></div>
+		<div id='monkey_player'>
+			<img id="monkey" class="fadeWrapper" src="static/monkey.png"/>
+		</div>
+		<div id="time_meter">
+				<span id='time'></span>
+		</div>
+	</div>
+	<!-- General Play/Pause, Upload, and Skip Buttons -->
+	<div class="centeredBottom">
+		<form id="musicform">
+	    	<input id="downVote" class="textbutton" type="button" value="Hate" >
+			<input id="mute" class="textbutton" type="button" value="Mute" >
+			<input id="upVote" class="textbutton" type="button" value="Love" ><br>
+			<div id="vote_meter">
+					<span id='upVotesBar'></span>
+					<span id='downVotesBar'></span>
+			</div>
+		</form>
+	</div>
+	<!-- This is where the chat is appended -->
+    <div id="chatLog"></div>
+	<!-- ChatBoard Messenger -->
+	<div>
+		<form id="chatform">
+        	<input id="chat_message" class="textbox" type="text" name="chat_data" id="chat_data" placeholder="Message">
+			<input id="chat_button" class="textbutton" type="submit" value="Enter">
+		</form>
+	<input  class = "textbox" id="chat_name" type="text" placeholder="Name">
+	</div>
+	
+	<!-- This is where the queue is appended -->
+	<form id="queue_list" s>
+		<input id='instructions' class="textbutton" type="submit" value="Help" />
+		<!-- Buttons for the different lists -->
+		<input id='trending' class="textbutton" type="submit" value="Trending" >
+		<input id='queue_button'class="textbutton" type="submit" value="Queue">
+	</form>
+	<div id="queueLog"></div>
+	<div>
+		<!-- Input for the music, as well as search button -->
+		<form id='searchbar' action="http://www.youtube.com/results" method="get" target="_blank">
+			<input id="key_wordSub" class="textbutton" type="submit" value="Search" />
+			<input class='textbox' name="search_query" type="text" maxlength="128" style="right: -12px; position: absolute; bottom:2px; width:233px" placeholder="Key Words"/>
+		</form> 
+		<form id="music">
+				<input class="textbutton" type="submit" id="load_button" value="Load" style="right:225px; position:absolute">
+	        	<input class="textbox" type="text" name="music_data" id="music_data" placeholder="Music URL" style="right: -12px; position: absolute; width:233px">
+		</form>
+	</div>
+	</div><!-- fadeWrapper end -->
+
+</body>
+</html>
