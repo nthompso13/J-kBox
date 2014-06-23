@@ -2,12 +2,10 @@ Enclosed is a website for collaborative youtube playlists. The website is called
 
 All requirements can be installed directly through Pip. Lucky you.
 
-You can also visit the site at http://vibevote.com to see it in action. 
-
 Requirements To Run:
 
-Flask==0.10.1
-Flask-SocketIO
+*Flask==0.10.1
+*Flask-SocketIO
 Jinja2==2.7.2
 MarkupSafe==0.18
 Werkzeug==0.9.4
@@ -17,3 +15,5 @@ gevent-websocket==0.9.2
 greenlet==0.4.2
 itsdangerous==0.23
 ujson==1.33
+
+Starred packages should include the rest of the requirements. 
