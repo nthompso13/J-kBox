@@ -220,9 +220,22 @@ body {
 }
 
 #key_wordSub {
-	right: 25px; 
+	right: 225px; 
 	position:absolute; 
 	bottom: 2px;
+}
+
+#key_words {
+	right: -12px;
+	width: 233px; 
+	position:absolute; 
+	bottom: 2px;
+}
+
+#load_button {
+	right: 225px; 
+	position:absolute; 
+	bottom: -22px;
 }
 
 textarea:focus, input:focus{
