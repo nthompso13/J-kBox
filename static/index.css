@@ -238,6 +238,13 @@ body {
 	bottom: -22px;
 }
 
+#music_data {
+	right: -12px; 
+	position: absolute; 
+	width:233px;
+	bottom: -22px;
+}
+
 textarea:focus, input:focus{
     outline: 0;
 }
